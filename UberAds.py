@@ -1,4 +1,5 @@
 import os
+import time
 from twilio.rest import Client
 
 n = 0
@@ -21,6 +22,7 @@ def send_mms(n):
 if __name__ == '__main__':
     for n in range(1, 16):
         send_mms(n)
+        time.sleep(10)
 
 
 
